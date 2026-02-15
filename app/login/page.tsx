@@ -47,7 +47,7 @@ export default function Login() {
       const { data } = await supabase.auth.getUser()
       if (data.user) {
         setUser(data.user)
-        router.push('/dashboard') // redirect immediately if already logged in
+        router.push('https://smart-bookmark-psi-sable.vercel.app/dashboard') // redirect immediately if already logged in
       }
     }
     getUser()
